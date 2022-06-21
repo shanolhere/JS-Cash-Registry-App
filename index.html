@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Cash Registry App</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="app" class="app">
+      <h1>Balance Out</h1>
+      <h4>Your Personal Cash Register Manager!</h4>
+      <h5>
+        Enter the bill amount and cash given by the customer & know the balance
+        and minimum number of notes to return.
+      </h5>
+
+      <div>
+        <div class="label">Bill Amount</div>
+        <input type="number" class="billAmt" />
+        <button class="next">Next</button>
+      </div>
+
+      <div class="cashRecievedDiv">
+        <div class="label">Cash Recieved</div>
+        <input type="number" class="cashRecieved" />
+        <button class="check">Check</button>
+      </div>
+
+      <div class="error"></div>
+
+      <div class="balance">
+        <div class="label">Balance Amount</div>
+        <div class="output">
+          <table>
+            <tr>
+              <th>Notes</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <th>No. of Notes</th>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+              <td class="noOfNotes"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

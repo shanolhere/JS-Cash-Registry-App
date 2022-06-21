@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  text-align: center;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+h5 {
+  padding: 6px 0 18px 0;
+}
+.label {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+input {
+  margin: 10px 0;
+  width: 50%;
+  padding: 6px;
+  font-size: 1.3rem;
+  outline: none;
+}
+.check,
+.next {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 30%;
+  font-size: 1.3rem;
+  color: white;
+  background-color: black;
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.check:active,
+.next:active {
+  transform: scaleX(0.7);
+}
+table,
+tr,
+td,
+th {
+  border: 2px solid black;
+  padding: 6px 10px;
+  align-items: center;
+}
+.cashRecievedDiv,
+.balance {
+  display: none;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 1rem;
+}
